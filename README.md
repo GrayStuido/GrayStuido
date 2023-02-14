@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Gray</h1>
-<h2 align="center">Creator If Math Helpers And Other School Bypasses</h2>
+<h2 align="center">Creator Of Math Helpers And Other School Bypasses</h2>
 <h3 align="center">A Passionate Student Bypassing School Restrictions</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=graystuido&label=Profile%20views&color=b10eb4&style=flat" alt="graystuido" /> </p>
