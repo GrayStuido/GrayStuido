@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<div class="content">
+  <h1>
+    <strong>
+      <i class="fa fa-exclamation-triangle"></i>
+      Status: Working
+   </strong>
+  </h1>
+<br>
+</div>
+<head>
+<style>
+.typewriter {
+  font-family: Arial, sans-serif;
+  font-size: 40px;
+  color: white;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid #1c1c1c1; /* The typewriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #818181; }
+}
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .content h1 {
+            color: #00AAD7;
+            font-size: 60px;
+            margin: 0;
+            margin-bottom: -20px;
+        }
+h1 {
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1 class="typewriter">Working As Intented</h1>
+
+<script>
+// get the element to animate
+var text = document.querySelector('.typewriter');
+// get the text content
+var content = text.textContent.trim();
+// clear the text content
+text.textContent = '';
+// set up a counter variable
+var i = 0;
+// start the animation
+var timer = setInterval(function() {
+  // add the next character
+  text.textContent += content.charAt(i);
+  // increment the counter
+  i++;
+  // check if the text is fully typed out
+  if (i >= content.length) {
+    // stop the animation
+    clearInterval(timer);
+    // add the cursor animation
+    text.style.borderRight = 'none';
+    text.style.animation = 'none';
+  }
+}, 120);
+</script>
+
+</body>
+</html>
