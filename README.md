@@ -2,7 +2,7 @@
 <h2 align="center">Creator Of Math Helpers And Other School Bypasses</h2>
 <h3 align="center">A Passionate Student Bypassing School Restrictions</h3>
 
-<button onclick="javascript:(function(){var%20s=document.createElement('script');s.setAttribute('src','https://raw.githubusercontent.com/USERNAME/REPOSITORY/BRANCH/FILE.js');document.body.appendChild(s);})();">Click me!</button>
+
 
 - ⚡ Fun fact **My School Hates Me**
 
