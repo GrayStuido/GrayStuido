@@ -16,8 +16,8 @@ function spawnFire() {
   img.style.position = "absolute";
   img.style.left = Math.floor(Math.random() * window.innerWidth) + "px";
   img.style.top = Math.floor(Math.random() * window.innerHeight) + "px";
-  img.style.width = "30px";
-  img.style.height = "30px";
+  img.style.width = "120px";
+  img.style.height = "120px";
 
   // Add the image to the page
   document.body.appendChild(img);
