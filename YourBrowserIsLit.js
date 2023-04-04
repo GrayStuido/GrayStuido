@@ -2,7 +2,7 @@
 const gifUrl = "https://static.wikia.nocookie.net/minecraftpocketedition/images/a/a5/Fire.gif";
 
 // Set the default spawn rate
-let spawnRate = 2000;
+let spawnRate = 20;
 
 // Create a function to "spawn" the Minecraft fire GIF
 function spawnFire() {
