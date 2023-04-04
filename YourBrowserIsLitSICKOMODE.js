@@ -6,6 +6,7 @@ let spawnRate = 1;
 
 // Create a function to "spawn" the Minecraft fire GIF
 function spawnFire() {
+  console.log("🔥");
   // Create a new img element for the GIF
   const img = document.createElement("img");
 
