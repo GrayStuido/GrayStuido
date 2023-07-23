@@ -82,4 +82,185 @@ background-color: #0C3755;
     </ul>
   </nav>
 </body>
+
+
+
+
+
+
+
+
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fracture Dark Theme</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1a1a1a;
+      color: #ffffff;
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    h1 {
+      color: #1e90ff;
+    }
+
+    .box {
+      background-color: #1e1e1e;
+      padding: 10px;
+      margin: 10px;
+      margin-right: 0;
+      border-radius: 5px;
+      flex: 1;
+    }
+
+    .download-section {
+      background-color: #1e1e1e;
+      padding: 10px;
+      margin: 10px;
+      margin-left: 0;
+      border-radius: 5px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid #1e90ff;
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Custom Dropdown Styling */
+    .dropdown-container {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+      overflow: hidden;
+    }
+
+    #versionSelect {
+      appearance: none;
+      background-color: #1e1e1e;
+      color: #ffffff;
+      padding: 5px 30px 5px 10px;
+      border: 2px solid #1e90ff;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .dropdown-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      color: #1e90ff;
+    }
+
+    #versionSelect option {
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+
+    /* Dropdown Animation */
+    .dropdown-content {
+      display: none;
+      background-color: #1e1e1e;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .dropdown-container:hover .dropdown-content {
+      display: block;
+      max-height: 150px;
+    }
+  </style>
+
+
+
+  <div class="box">
+    <h1>EaglercraftUltra</h1>
+    <div class="box">
+      <h2>Features:</h2>
+      <ul>
+        <li>Custom Start Menu</li>
+        <li>Wikipedia Cloak</li>
+        <li>Screen Cloak: Hides your screen when you click off</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Fracture User Agreement:</h2>
+      <p>
+        By downloading or using any of the files distributed by Fracture, users agree to assume all risks and
+        responsibilities associated with their use. Users also acknowledge that the creator or developer of such files
+        is not liable for any claims, damages, liabilities, losses, costs, and expenses arising from the use or
+        distribution of the files.
+      </p>
+    </div>
+
+    <div class="box">
+      <h2>Credits:</h2>
+      <ul>
+        <li>LaxDude1: Creator of EaglercraftUltra</li>
+        <li>Raith: Contributor to the project</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="download-section">
+    <h2>Download Version:</h2>
+    <div class="dropdown-container">
+      <select id="versionSelect">
+        <option value="https://github.com/GrayStuido/EaglercraftUltra/archive/refs/tags/3.0.0b.zip">Latest</option>
+        <option value="https://github.com/GrayStuido/EaglercraftUltra/archive/refs/tags/3.0.0b.zip">3.0.0b</option>
+        <!-- Add more versions as needed -->
+      </select>
+      <div class="dropdown-icon">▼</div>
+    </div>
+    <br>
+    <p>Get the selected version of Fracture here:</p>
+    <p>
+      <a id="downloadLink" href="https://github.com/GrayStuido/EaglercraftUltra/archive/refs/tags/3.0.0b.zip" target="_blank">Download Fracture</a>
+    </p>
+  </div>
+
+  <script>
+    const versionSelect = document.getElementById('versionSelect');
+    const downloadLink = document.getElementById('downloadLink');
+
+    versionSelect.addEventListener('change', function () {
+      downloadLink.href = versionSelect.value;
+    });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
 </html>
