@@ -1,5 +1,4 @@
 <h1 align="center">Hi, I'm Gray</h1>
-<h2> https://gist.github.com/GrayStuido/2dbf92328711ddc35c72bd60eb3a40ab </h2>
 <h3 align="center">A Passionate Student Bypassing School Restrictions</h3>
 
 
