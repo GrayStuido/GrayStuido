@@ -1,8 +1,11 @@
 <h1 align="center">Hi, I'm Gray</h1>
 <h3 align="center">A Passionate Student Bypassing School Restrictions</h3>
-<h2>https://graystuido.github.io/GrayStuido/</h2>
 
+---
 
+<h2 align="center">https://graystuido.github.io/GrayStuido/</h2>
+
+---
 
 - ⚡ Fun fact **My School Hates Me**
 
