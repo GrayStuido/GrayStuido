@@ -1,32 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Carousel with Fade Transition</title>
-    <style>
-        #review-container {
-            width: 300px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            margin: 0 auto;
-            text-align: center;
-            opacity: 0;
-            transition: opacity 0.5s ease-in-out;
-        }
-
-        #review-container.show {
-            opacity: 1;
-        }
-    </style>
-</head>
-<body>
-    <div id="review-container">
-        <div id="review-content"></div>
-        <p id="reviewer"></p>
-    </div>
-
-    <script>
         // Define an array of reviews
         const reviews = [
             {
@@ -75,6 +46,3 @@
 
         // Set an interval to automatically cycle through reviews
         setInterval(nextReview, 3000); // Change every 3 seconds
-    </script>
-</body>
-</html>
