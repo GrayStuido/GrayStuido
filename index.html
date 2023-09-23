@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>GrayStuido's Gitub</title>
+  <title>GrayStuido | About Me</title>
   <style>
-    /* Reset default styles */
+    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
     
-    /* Fonts */
+    
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
     body {
       background-color: #1a202c;
+color: white;
+font-family: 'Roboto', sans-serif;font-family: 'Roboto', sans-serif;
 }
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background: #141314
+        }
     /* Navigation bar styles */
     nav {
-      background-color: #212C45; /* Dark blue background */
+      background: linear-gradient(to right, #540953, #142847);
       color: #fff; /* White text color */
       display: flex;
       align-items: center;
@@ -50,36 +59,219 @@
     }
     
     .navbar li a {
-      color: #fff; /* White text color */
+      color: #fff;
       text-decoration: none;
       padding: 5px;
     }
     .navbar li as {
-      color: #fff; /* White text color */
+      color: #fff;
       text-decoration: none;
       padding: 9px;
-background-color: #0C3755;
+background-color: #730a71;
     }
     
     .navbar li a:hover {
-      background-color: rgba(255, 255, 255, 0.1); /* Lighter background on hover */
+      background-color: rgba(255, 255, 255, 0.1);
     }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        #page-main {
+            width: 60%;
+            height: 20%;
+            background-color: #0d0c0d;
+            border: 1px solid #ccc;
+            text-align: center;
+            padding: 20px;
+            border-radius: 100px;
+            overflow: auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            animation: expandw 1s forwards, expandh 5s forwards;
+z-index: 9;
+#page-sub {
+
+
+}
+        }
+#pink {
+color: pink;
+}
+        #page-main::-webkit-scrollbar {
+            width: 0;
+        }
+
+        @keyframes expandw {
+            0% {
+                width: 10px;
+                border: 1px solid #cf15cb;
+
+            }
+            100% {
+                width: 60%;
+
+            }
+        }
+        @keyframes expandh {
+            0% {
+                height: 10px;
+border: 1px solid #cf15cb;
+            }
+90% {
+border: 1px solid #cf15cb;
+}
+            100% {
+                height: 87%;
+            }
+        }
+      #random-h1 {
+        color: orange;
+  font-family: Arial, sans-serif;
+  text-align: center;
+animation: colorChange 6s linear infinite;
+      }
+        @keyframes colorChange {
+            0%, 100% { color: rgb(255, 0, 0); }
+            25% { color: rgb(0, 255, 0); }
+            50% { color: rgb(0, 0, 255); }
+            75% { color: rgb(255, 255, 0); }
+        }
+  #bottom-paragraph {
+z-index: 1;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+color: #1B1A1A;
+    width: 100%;
+    background-color: transperent;
+    text-align: center;
+  }
+        #review-container {
+            width: 300px;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        #review-container.show {
+            opacity: 1;
+        }
   </style>
 </head>
-<body>
-  <nav>
-    <div class="logo">
-      <img src="The_Sun.gif" alt="Error">
-      <h1>GrayStuido</h1>
+<body onload="changeText()">
+
+
+    <div id="page-main">
+<h1>Hello</h1>
+    <h3 id="random-h1">Oh No! It looks like an Error Occurred and the Splash Text did not Load :(</h3>
+<script src="Personal-Text-Splash.js"></script>
+<br>
+
+
+<div id="page-sub">
+<h2>About Me:</h2>
+<p>
+  <span style="color: pink;">they</span>
+  <span style="color: grey;">/</span>
+  <span style="color: aqua;">∞</span>
+  <span style="color: grey;">/</span>
+  <span style="color: salmon;">them</span>
+<br>
+Im a Developer Of Random Things
+<br>
+<br>
+Getting Into Pixel Art And Drawing In General
+</p>
+</div>
+<br>
+<h2>Games You Should Play:</h2>
+<p>
+<a href="https://futurecat.itch.io/oneshot" style="color: gold;">Oneshot</a>
+<a href="https://joinbattlebit.com" style="color: grey;">BattleBit Remastered</a>
+<a href="" style="color: #BC061E;">No Mans Sky</a>
+<br>
+<a href="" style="color: gold;"></a>
+<a href="" style="color: #17B8E7;">Core Keeper</a>
+<a href="" style="color: gold;"></a>
+</p>
+
+
+<br>
+<br>
+
+<a href="https://discord.com/users/724472526033649695" target="_blank">
+  <img src="https://lanyard.cnrad.dev/api/724472526033649695" alt="Discord Presence">
+</a>
+<br>
+<br>
+<h2>User Reviews:</h2>
+    <div id="review-container">
+        <div style="color: #AD96B5;" id="review-text"></div>
+        <div style="color: #8A31A9;" id="review-author"></div>
     </div>
-    <ul class="navbar">
-      <li></li>
-      <li><as href="index.html">Home</as></li>
-      <li><a href="About-Index.html">About Me</a></li>
-<p><b>Projects:</b><p>
-      <li></li>
-      <li><a href="EGU-Index.html">EaglercraftUltra</a></li>
-    </ul>
-  </nav>
+
+    <script>
+        const reviews = [
+            { content: "He a pretty funny little fella. Don't know him that well, but pretty W so far. 7/10", reviewer: "SabatonGuy1" },
+            { content: "cute :3", reviewer: "Hootis" },
+            { content: "35.227.62.178", reviewer: "da cheese man" },
+        ];
+
+        let currentIndex = 0;
+
+        function displayReview() {
+            const reviewText = document.getElementById("review-text");
+            const reviewAuthor = document.getElementById("review-author");
+
+            reviewText.textContent = `"${reviews[currentIndex].content}"`;
+            reviewAuthor.textContent = `- ${reviews[currentIndex].reviewer} -`;
+
+            currentIndex = (currentIndex + 1) % reviews.length;
+        }
+
+        setInterval(() => {
+            const reviewContainer = document.getElementById("review-container");
+            reviewContainer.style.opacity = 0;
+            setTimeout(() => {
+                displayReview();
+                reviewContainer.style.opacity = 1;
+            }, 500);
+        }, 5000);
+        
+        // Initial display
+        displayReview();
+    </script>
+
+
+
+    </div>
+
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+
+</div>
+
 </body>
+<br>
+<div>
+</div>
+<p id="bottom-paragraph">
+why you down here?
+<br>
+Ig while your here I like Diancie
+</p>
+<div id="page-effect">
+</div>
 </html>
