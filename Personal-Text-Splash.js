@@ -8,6 +8,8 @@
         "Bob loves pirating Shrek 1-2",
         "We Do a Bit of Trolling",
         "Love yourself now!",
+        "Splatoon 3 is so fucking w",
+        "I love Oneshot so much",
       ];
 
       function changeText() {
