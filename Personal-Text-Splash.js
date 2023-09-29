@@ -10,6 +10,8 @@
         "Love yourself now!",
         "Splatoon 3 is so fucking w",
         "I love Oneshot so much",
+        "Rice Spice",
+        "Gas Stove And Fridge",
       ];
 
       function changeText() {
