@@ -12,6 +12,14 @@
         "I love Oneshot so much",
         "Rice Spice",
         "Gas Stove And Fridge",
+        "🏳️‍⚧️ Trans Rights 🏳️‍⚧️",
+        "He no like the banana",
+        "Fuck It We Ball",
+        "Har Har Har Har",
+        "My name is Walter Hartwell White",
+        "Red white and blue are the colors of freedom until they start flashing behind you",
+        "The rainbow Handheld Portal Device: It is very gay chell",
+        "fuit gummy",
       ];
 
       function changeText() {
