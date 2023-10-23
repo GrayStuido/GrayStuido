@@ -13,6 +13,8 @@
         "Rice Spice",
         "Gas Stove And Fridge",
         "🏳️‍⚧️ Trans Rights 🏳️‍⚧️",
+        "🏳️‍🌈 Gay Rights 🏳️‍🌈",
+        "🏳️‍🌈🏳️‍⚧️ LGBTQ+ Rights 🏳️‍⚧️🏳️‍🌈",
         "He no like the banana",
         "Fuck It We Ball",
         "Har Har Har Har",
