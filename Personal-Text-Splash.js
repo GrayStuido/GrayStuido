@@ -21,7 +21,11 @@
         "My name is Walter Hartwell White",
         "Red white and blue are the colors of freedom until they start flashing behind you",
         "The rainbow Handheld Portal Device: It is very gay chell",
-        "fuit gummy",
+        "I put a Splash Wall infront of your door good luck getting out",
+        "There is a Fizzy Bomb in your mailbox :)",
+        "Walter....",
+        "SPIT YO SHIT TROY!!!",
+        "Jesse, did you just install BTD 3 Unlimited Money Glitch [HACKED] onto the family computer",
       ];
 
       function changeText() {
