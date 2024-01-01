@@ -20,8 +20,7 @@ font-family: 'Roboto', sans-serif;font-family: 'Roboto', sans-serif;
         body {
             margin: 0;
             padding: 0;
-            width: 100%;
-            height: 90vh;
+            height: 100vh;
             background: #141314
         }
     /* Navigation bar styles */
@@ -82,20 +81,43 @@ background-color: #730a71;
         }
         
         #page-main {
-            width: 60%;
-            height: 85%;
+            width: 100%;
+            height: 100%;
             background-color: #0d0c0d;
-            border: 1px solid #ccc;
-            text-align: center;
+            text-align: Left;
             padding: 20px;
-            border-radius: 100px;
             overflow: auto;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             animation: expandw 1s forwards, expandh 5s forwards;
+      background: repeating-linear-gradient(45deg, #271675 , #000000 0px, #010101 16px, #1D0326 20px);
+      background-size: 30px 30px;
 z-index: 9;
+#page-dom {
+border: 2px solid #181818;
+border-radius: 10px;
+padding: 10px;
+display: inline-block;
+width: 435\px;
+}
 #page-sub {
-
-
+border: 2px solid #181818;
+border-radius: 10px;
+padding: 10px;
+display: inline-block;
+width: 435px;
+}
+#pronouns {
+border: 2px solid #0A0A0A;
+border-radius: 10px;
+display: inline-block;
+}
+#page-wrapper {
+border: 2px solid #010101;
+border-radius: 10px;
+height: 99vh;
+display: inline-block;
+padding: 5px;
+background: #010101;
 }
         }
 #pink {
@@ -107,7 +129,7 @@ color: pink;
       #random-h1 {
         color: orange;
   font-family: Arial, sans-serif;
-  text-align: center;
+  text-align: left;
 animation: colorChange 6s linear infinite;
       }
         @keyframes colorChange {
@@ -131,41 +153,53 @@ color: #1B1A1A;
             height: 100px;
             padding: 10px;
             border: 1px solid #ccc;
-            margin: 0 auto;
+            margin: 0 left;
             text-align: center;
             opacity: 0;
             transition: opacity 0.5s ease-in-out;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: left;
             font-family: 'Roboto', sans-serif;
         }
 
         #review-container.show {
             opacity: 1;
         }
+    .pattern {
+      background: repeating-linear-gradient(45deg, #271675 , #000000 0px, #160429 16px, #271675 20px);
+      background-size: 30px 30px;
+    }
   </style>
 </head>
 <body onload="changeText()">
 
 
     <div id="page-main">
-<h1>Hello</h1>
-    <h3 id="random-h1">Oh No! It looks like an Error Occurred and the Splash Text did not Load :(</h3>
 <script src="Personal-Text-Splash.js"></script>
+
+<div id="page-wrapper">
+<div id="page-sub">
+<h1>Hello</h1>
+</div>
 <br>
 
-
+<div id="page-sub">
+<h3 id="random-h1">Oh No! It looks like an Error Occurred and the Splash Text did not Load :(</h3>
+</div>
+<br>
 <div id="page-sub">
 <h2>About Me:</h2>
 <p>
 <br>
+<div id="pronouns">
   <span style="color: pink;">She</span>
   <span style="color: grey;">/</span>
   <span style="color: white;">🏳️‍⚧️</span>
   <span style="color: grey;">/</span>
   <span style="color: salmon;">They</span>
+</div>
 <br>
 <br>
 Im a Developer Of Random Things
@@ -175,6 +209,7 @@ Getting Into Pixel Art And Drawing In General
 </p>
 </div>
 <br>
+<div id="page-sub">
 <h2>Games You Should Play:</h2>
 <p>
 <a href="https://futurecat.itch.io/oneshot" style="color: gold;">Oneshot</a>
@@ -185,11 +220,9 @@ Getting Into Pixel Art And Drawing In General
 <a href="https://rainworldgame.com" style="color: #80afed;">Rain World</a>
 <a href="https://store.steampowered.com/app/2378900/The_Coffin_of_Andy_and_Leyley/" style="color: #6e6050;">The Coffin of Andy and Leyley</a>
 </p>
-
-
+</div>
 <br>
-<br>
-
+<div id="page-sub">
 <a href="https://discord.com/users/724472526033649695" target="_blank">
   <img src="https://lanyard.cnrad.dev/api/724472526033649695" alt="Discord Presence">
 </a>
@@ -200,7 +233,10 @@ Getting Into Pixel Art And Drawing In General
         <div style="color: #AD96B5;" id="review-text"></div>
         <div style="color: #8A31A9;" id="review-author"></div>
     </div>
+</div>
 
+<div id="container" class="pattern"></div>
+</div>
     <script>
         const reviews = [
             { content: "He a pretty funny little fella. Don't know him that well, but pretty W so far. 7/10", reviewer: "SabatonGuy1" },
