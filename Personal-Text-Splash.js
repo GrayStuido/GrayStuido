@@ -6,6 +6,7 @@
         "Were very proud of course, flies anyway because bees dont need vacations.",
         "We love bob",
         "Bob loves pirating Shrek 1-2",
+        "❤️☀️💔",
         "We Do a Bit of Trolling",
         "Love yourself now!",
         "Splatoon 3 is so fucking w",
@@ -26,6 +27,8 @@
         "Walter....",
         "SPIT YO SHIT TROY!!!",
         "Jesse, did you just install BTD 3 Unlimited Money Glitch [HACKED] onto the family computer",
+        "❤️☀️💔",
+
       ];
 
       function changeText() {
