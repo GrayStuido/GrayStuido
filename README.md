@@ -1,7 +1,1 @@
-<p align="center">Hi, Im Gragin!</p>
-
-###
-
-<div align="center">
-  <img height="200" src="https://avatars.githubusercontent.com/u/113940755?v=4"  />
-</div>
+<h1 align="center">Hi, Im Gragin!</h1>
