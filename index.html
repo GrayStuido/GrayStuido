@@ -1,77 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Gragin | About Me</title>
-  <style>
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-    body {
-      background-color: #1a202c;
-color: white;
-font-family: 'Roboto', sans-serif;font-family: 'Roboto', sans-serif;
-}
+<script src="TheFlag.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gragin | About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        body {
+            background-color: #1a202c;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+
         body {
             margin: 0;
             padding: 0;
             height: 100vh;
-            background: #141314
+            background: #141314;
         }
-    /* Navigation bar styles */
-    nav {
-      background: linear-gradient(to right, #540953, #142847);
-      color: #fff; /* White text color */
-      display: flex;
-      align-items: center;
-      padding: 10px;
-      z-index: 9999;
-      font-family: 'Roboto', sans-serif;
-    }
-    
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-    
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    
-    .logo h1 {
-      font-size: 20px;
-    }
-    
-    .navbar {
-      list-style: none;
-      display: flex;
-    }
-    
-    .navbar li {
-      margin-right: 10px;
-    }
-    
-    .navbar li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 5px;
-    }
-    .navbar li as {
-      color: #fff;
-      text-decoration: none;
-      padding: 9px;
-background-color: #730a71;
-    }
-    
-    .navbar li a:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
+
+        /* Navigation bar styles */
+        nav {
+            background: linear-gradient(to right, #540953, #142847);
+            color: #fff; /* White text color */
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            z-index: 9999;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .logo h1 {
+            font-size: 20px;
+        }
+
+        .navbar {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 10px;
+        }
+
+        .navbar li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        .navbar li as {
+            color: #fff;
+            text-decoration: none;
+            padding: 9px;
+            background-color: #730a71;
+        }
+
+        .navbar li a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
         body {
             display: flex;
             justify-content: center;
@@ -79,7 +86,7 @@ background-color: #730a71;
             height: 100vh;
             margin: 0;
         }
-        
+
         #page-main {
             width: 100%;
             height: 100%;
@@ -89,65 +96,78 @@ background-color: #730a71;
             overflow: auto;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             animation: expandw 1s forwards, expandh 5s forwards;
-      background: repeating-linear-gradient(45deg, #271675 , #000000 0px, #010101 16px, #1D0326 20px);
-      background-size: 30px 30px;
-z-index: 9;
-#page-dom {
-border: 2px solid #181818;
-border-radius: 10px;
-padding: 10px;
-display: inline-block;
-width: 435\px;
-}
-#page-sub {
-border: 2px solid #181818;
-border-radius: 10px;
-padding: 10px;
-display: inline-block;
-width: 435px;
-}
-#pronouns {
-border: 2px solid #0A0A0A;
-border-radius: 10px;
-display: inline-block;
-}
-#page-wrapper {
-border: 2px solid #010101;
-border-radius: 10px;
-height: 97vh;
-display: inline-block;
-padding: 5px;
-background: #010101;
-}
+            background: repeating-linear-gradient(45deg, #271675, #000000 0px, #010101 16px, #1D0326 20px);
+            background-size: 30px 30px;
+            z-index: 9;
         }
-#pink {
-color: pink;
-}
+
+        #page-sub {
+            border: 2px solid #181818;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+            width: 435px;
+        }
+
+        #pronouns {
+            border: 2px solid #0A0A0A;
+            border-radius: 10px;
+            display: inline-block;
+        }
+
+        #page-wrapper {
+            border: 2px solid #010101;
+            border-radius: 10px;
+            height: 97vh;
+            display: inline-block;
+            padding: 5px;
+            background: #010101;
+        }
+
+        #pink {
+            color: pink;
+        }
+
         #page-main::-webkit-scrollbar {
             width: 0;
         }
-      #random-h1 {
-        color: orange;
-  font-family: Arial, sans-serif;
-  text-align: left;
-animation: colorChange 6s linear infinite;
-      }
-        @keyframes colorChange {
-            0%, 100% { color: rgb(255, 0, 0); }
-            25% { color: rgb(0, 255, 0); }
-            50% { color: rgb(0, 0, 255); }
-            75% { color: rgb(255, 255, 0); }
+
+        #random-h1 {
+            color: orange;
+            font-family: Arial, sans-serif;
+            text-align: left;
+            animation: colorChange 6s linear infinite;
         }
-  #bottom-paragraph {
-z-index: 1;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-color: #1B1A1A;
-    width: 100%;
-    background-color: transperent;
-    text-align: center;
-  }
+
+        @keyframes colorChange {
+            0%, 100% {
+                color: rgb(255, 0, 0);
+            }
+
+            25% {
+                color: rgb(0, 255, 0);
+            }
+
+            50% {
+                color: rgb(0, 0, 255);
+            }
+
+            75% {
+                color: rgb(255, 255, 0);
+            }
+        }
+
+        #bottom-paragraph {
+            z-index: 1;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            color: #1B1A1A;
+            width: 100%;
+            background-color: transperent;
+            text-align: center;
+        }
+
         #review-container {
             width: 300px;
             height: 100px;
@@ -167,90 +187,98 @@ color: #1B1A1A;
         #review-container.show {
             opacity: 1;
         }
-    .pattern {
-      background: repeating-linear-gradient(45deg, #271675 , #000000 0px, #160429 16px, #271675 20px);
-      background-size: 30px 30px;
-    }
-  </style>
+
+        .pattern {
+            background: repeating-linear-gradient(45deg, #271675, #000000 0px, #160429 16px, #271675 20px);
+            background-size: 30px 30px;
+        }
+
+    </style>
 </head>
 <body onload="changeText()">
 
 
-    <div id="page-main">
-<script src="Personal-Text-Splash.js"></script>
+<div id="page-main">
+    <script src="Personal-Text-Splash.js"></script>
+    <script src="TimeZone.js"></script>
+    <div id="page-wrapper">
+        <div id="page-sub">
+            <h1>Hello</h1>
+        </div>
+        <br>
 
-<div id="page-wrapper">
-<div id="page-sub">
-<h1>Hello</h1>
-</div>
-<br>
+        <div id="page-sub">
+            <h3 id="random-h1">Oh No! It looks like an Error Occurred and the Splash Text did not Load :(</h3>
+        </div>
+        <br>
+        <div id="page-sub">
+            <h2>About Me:</h2>
+            <p>
+                <br>
+                <div id="pronouns">
+                    <span style="color: pink;">She</span>
+                    <span style="color: grey;">/</span>
+                    <span style="color: white;">🏳️‍⚧️</span>
+                    <span style="color: grey;">/</span>
+                    <span style="color: salmon;">Her</span>
+                    <br>
+                    <span style="color: grey;">Bisexual | Poly</span>
+                </div>
+                <br>
+                <br>
+                <p>If you couldn't tell I'm trans</p>
+                <br>
+                <p>I like Splatoon way too much. I've been playing the heck out of Side Order (I'm a Stamper main btw)</p>
+                <br>
+                <p>I'm a little off the deep end :3</p>
+                <p></p>
+            </p>
+            <br>
+            <div id="time-container">
+                It is <a data-time-format="12">Loading Time...</a> or <a data-time-format="24">Loading Time...</a> for me
+            </div>
+        </div>
+        <br>
+        <div id="page-sub">
+            <h2>Games You Should Play:</h2>
+            <p>
+                <a href="https://futurecat.itch.io/oneshot" style="color: gold;">Oneshot</a>
+                <a href="https://joinbattlebit.com" style="color: grey;">BattleBit Remastered</a>
+                <a href="https://www.nomanssky.com" style="color: #BC061E;">No Mans Sky</a>
+                <br>
+                <a href="https://store.steampowered.com/app/1621690/Core_Keeper/" style="color: #17B8E7;">Core Keeper</a>
+                <a href="https://rainworldgame.com" style="color: #80afed;">Rain World</a>
+                <a href="https://store.steampowered.com/app/2378900/The_Coffin_of_Andy_and_Leyley/"
+                   style="color: #6e6050;">The Coffin of Andy and Leyley</a>
+                <br>
+                <a href="https://www.pacificdrivegame.com/" style="color: #3d85c6;">Pacific Drive</a>
+                <a href="https://store.steampowered.com/app/1966720/Lethal_Company/" style="color: #b20909;">Lethal
+                    Company</a>
+            </p>
+        </div>
+        <br>
+        <div id="page-sub">
+            <a href="https://discord.com/users/724472526033649695" target="_blank">
+                <img src="https://lanyard.cnrad.dev/api/724472526033649695" alt="Discord Presence">
+            </a>
+            <br>
+            <br>
+            <h2>User Reviews:</h2>
+            <div id="review-container">
+                <div style="color: #AD96B5;" id="review-text"></div>
+                <div style="color: #8A31A9;" id="review-author"></div>
+            </div>
+        </div>
 
-<div id="page-sub">
-<h3 id="random-h1">Oh No! It looks like an Error Occurred and the Splash Text did not Load :(</h3>
-</div>
-<br>
-<div id="page-sub">
-<h2>About Me:</h2>
-<p>
-<br>
-<div id="pronouns">
-  <span style="color: pink;">She</span>
-  <span style="color: grey;">/</span>
-  <span style="color: white;">🏳️‍⚧️</span>
-  <span style="color: grey;">/</span>
-  <span style="color: salmon;">Her</span>
-<br>
-<span style="color: grey;">Bisexual | Poly</span>
-</div>
-<br>
-<br>
-<p>If you couldn't tell im trans</p>
-<br>
-<p>I like Splatoon way too much. Ive been playing the fuck out of Side Order (Im a Stamper main btw)</p>
-<br>
-<p>Im a little off the deep end :3</p>
-<p></p>
-</p>
-</div>
-<br>
-<div id="page-sub">
-<h2>Games You Should Play:</h2>
-<p>
-<a href="https://futurecat.itch.io/oneshot" style="color: gold;">Oneshot</a>
-<a href="https://joinbattlebit.com" style="color: grey;">BattleBit Remastered</a>
-<a href="https://www.nomanssky.com" style="color: #BC061E;">No Mans Sky</a>
-<br>
-<a href="https://store.steampowered.com/app/1621690/Core_Keeper/" style="color: #17B8E7;">Core Keeper</a>
-<a href="https://rainworldgame.com" style="color: #80afed;">Rain World</a>
-<a href="https://store.steampowered.com/app/2378900/The_Coffin_of_Andy_and_Leyley/" style="color: #6e6050;">The Coffin of Andy and Leyley</a>
-<br>
-<a href="https://www.pacificdrivegame.com/" style="color: #3d85c6;">Pacific Drive</a>
-<a href="https://store.steampowered.com/app/1966720/Lethal_Company/" style="color: #b20909;">Lethal Company</a>
-</p>
-</div>
-<br>
-<div id="page-sub">
-<a href="https://discord.com/users/724472526033649695" target="_blank">
-  <img src="https://lanyard.cnrad.dev/api/724472526033649695" alt="Discord Presence">
-</a>
-<br>
-<br>
-<h2>User Reviews:</h2>
-    <div id="review-container">
-        <div style="color: #AD96B5;" id="review-text"></div>
-        <div style="color: #8A31A9;" id="review-author"></div>
+        <div id="container" class="pattern"></div>
     </div>
-</div>
-
-<div id="container" class="pattern"></div>
-</div>
     <script>
         const reviews = [
-            { content: "He a pretty funny little fella. Don't know him that well, but pretty W so far. 7/10", reviewer: "SabatonGuy1" },
-            { content: "cute :3", reviewer: "Hoootis" },
-            { content: "8/10 Spoiled me too much", reviewer: "mentallyabsent" },
-            { content: "35.227.62.178", reviewer: "da cheese man" },
-            { content: "this mf is 100% in the fruit basket", reviewer: "crimson.official" },
+            {content: "He a pretty funny little fella. Don't know him that well, but pretty W so far. 7/10", reviewer: "SabatonGuy1"},
+            {content: "cute :3", reviewer: "Hoootis"},
+            {content: "8/10 Spoiled me too much", reviewer: "mentallyabsent"},
+            {content: "35.227.62.178", reviewer: "da cheese man"},
+            {content: "this mf is 100% in the fruit basket", reviewer: "crimson.official"},
         ];
 
         let currentIndex = 0;
@@ -273,14 +301,44 @@ color: #1B1A1A;
                 reviewContainer.style.opacity = 1;
             }, 500);
         }, 5000);
-        
+
         // Initial display
         displayReview();
     </script>
 
+    <script>
+        function updateTimeZone() {
+            const timeZone = 'America/Phoenix'; // Time zone to display
+            const now = new Date();
 
+            // Loop through all <a> tags with data-time-format attribute
+            document.querySelectorAll('a[data-time-format]').forEach(anchor => {
+                const timeFormat = anchor.getAttribute('data-time-format');
 
-    </div>
+                // Determine options based on time format
+                const options = {
+                    timeZone,
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    ...(timeFormat === '12' ? {hour12: true} : {hour12: false})
+                };
+
+                // Format the time based on options
+                const formattedTime = now.toLocaleString('en-US', options);
+
+                // Update the anchor's text content
+                anchor.textContent = formattedTime;
+            });
+        }
+
+        // Update the time zone immediately
+        updateTimeZone();
+
+        // Optionally, update the time zone every minute (60000 milliseconds)
+        setInterval(updateTimeZone, 60000);
+    </script>
+
+</div>
 
 <div style="display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
 
@@ -291,9 +349,9 @@ color: #1B1A1A;
 <div>
 </div>
 <p id="bottom-paragraph">
-why you down here?
-<br>
-Ig while your here I like Diancie
+    why you down here?
+    <br>
+    I guess while you're here I like Diancie
 </p>
 <div id="page-effect">
 </div>
