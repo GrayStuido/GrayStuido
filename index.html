@@ -208,7 +208,7 @@
         <br>
 
         <div id="page-sub">
-            <h3 id="random-h1">Oh No! It looks like an Error Occurred and the Splash Text did not Load :(</h3>
+            <h3 id="random-h1">Loading</h3>
         </div>
         <br>
         <div id="page-sub">
@@ -235,7 +235,7 @@
             </p>
             <br>
             <div id="time-container">
-                It is <a data-time-format="12">Loading Time...</a> or <a data-time-format="24">Loading Time...</a> for me
+                It is <a data-time-format="12">0:00</a> or <a data-time-format="24">00:00</a> for me
             </div>
         </div>
         <br>
@@ -272,39 +272,7 @@
 
         <div id="container" class="pattern"></div>
     </div>
-    <script>
-        const reviews = [
-            {content: "He a pretty funny little fella. Don't know him that well, but pretty W so far. 7/10", reviewer: "SabatonGuy1"},
-            {content: "cute :3", reviewer: "Hoootis"},
-            {content: "8/10 Spoiled me too much", reviewer: "mentallyabsent"},
-            {content: "35.227.62.178", reviewer: "da cheese man"},
-            {content: "this mf is 100% in the fruit basket", reviewer: "crimson.official"},
-        ];
-
-        let currentIndex = 0;
-
-        function displayReview() {
-            const reviewText = document.getElementById("review-text");
-            const reviewAuthor = document.getElementById("review-author");
-
-            reviewText.textContent = `"${reviews[currentIndex].content}"`;
-            reviewAuthor.textContent = `- ${reviews[currentIndex].reviewer} -`;
-
-            currentIndex = (currentIndex + 1) % reviews.length;
-        }
-
-        setInterval(() => {
-            const reviewContainer = document.getElementById("review-container");
-            reviewContainer.style.opacity = 0;
-            setTimeout(() => {
-                displayReview();
-                reviewContainer.style.opacity = 1;
-            }, 500);
-        }, 5000);
-
-        // Initial display
-        displayReview();
-    </script>
+    <script src="User-Reviews.js"></script>
 
     <script>
         function updateTimeZone() {

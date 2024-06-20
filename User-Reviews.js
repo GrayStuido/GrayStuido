@@ -1,48 +1,63 @@
-        // Define an array of reviews
-        const reviews = [
-            {
-                content: "Lorem Ipsum 1",
-                reviewer: "Random User 1"
-            },
-            {
-                content: "Lorem Ipsum 2",
-                reviewer: "Random User 2"
-            },
-            {
-                content: "Lorem Ipsum 3",
-                reviewer: "Random User 3"
-            }
-        ];
+const reviews = [
+    { content: "He a pretty funny little fella. Don't know him that well, but pretty W so far. 7/10", reviewer: "SabatonGuy1" },
+    { content: "cute :3", reviewer: "Hoootis" },
+    { content: "8/10 Spoiled me too much", reviewer: "mentallyabsent" },
+    { content: "35.227.62.178", reviewer: "da cheese man" },
+    { content: "this mf is 100% in the fruit basket", reviewer: "crimson.official" },
+];
 
-        // Function to update the review content with a fade effect
-        function updateReview(index) {
-            const reviewContainer = document.getElementById("review-container");
-            const reviewContent = document.getElementById("review-content");
-            const reviewer = document.getElementById("reviewer");
+let currentIndex = 0;
 
-            // Add a class to trigger the fade transition
-            reviewContainer.classList.remove("show");
+// Initial display of dummy review
+displayDummyReview();
 
-            setTimeout(() => {
-                // Update the content and reviewer based on the index
-                reviewContent.textContent = reviews[index].content;
-                reviewer.textContent = `- ${reviews[index].reviewer} -`;
+// Function to display the dummy review
+function displayDummyReview() {
+    const reviewText = document.getElementById("review-text");
+    const reviewAuthor = document.getElementById("review-author");
 
-                // Add the class to fade the content in
-                reviewContainer.classList.add("show");
-            }, 500); // Wait for the fade out transition to complete
-        }
+    reviewText.textContent = `"Hai! Im loading :P"`;
+    reviewAuthor.textContent = `- Gragin -`;
 
-        let currentIndex = 0;
+    // Fade in effect for the dummy review
+    const reviewContainer = document.getElementById("review-container");
+    reviewContainer.style.opacity = 1;
 
-        // Initial review
-        updateReview(currentIndex);
+    // Set timeout for transitioning to actual reviews
+    setTimeout(() => {
+        // Fade out dummy review
+        reviewContainer.style.opacity = 0;
 
-        // Function to cycle through reviews
-        function nextReview() {
-            currentIndex = (currentIndex + 1) % reviews.length;
-            updateReview(currentIndex);
-        }
+        // After fade out, transition to first real review
+        setTimeout(() => {
+            displayReview();
+            // Fade in the first real review
+            reviewContainer.style.opacity = 1;
+        }, 300); // Delay before fading in real review (0.3 seconds)
+    }, 2000); // Adjust delay as needed for dummy review display
+}
 
-        // Set an interval to automatically cycle through reviews
-        setInterval(nextReview, 3000); // Change every 3 seconds
+// Function to display a review
+function displayReview() {
+    const reviewText = document.getElementById("review-text");
+    const reviewAuthor = document.getElementById("review-author");
+
+    reviewText.textContent = `"${reviews[currentIndex].content}"`;
+    reviewAuthor.textContent = `- ${reviews[currentIndex].reviewer} -`;
+
+    // Increment index for the next review
+    currentIndex = (currentIndex + 1) % reviews.length;
+
+    // Schedule next review transition after 5 seconds (adjust as needed)
+    setTimeout(() => {
+        // Fade out current review
+        const reviewContainer = document.getElementById("review-container");
+        reviewContainer.style.opacity = 0;
+
+        // After fade out, display next review and fade in
+        setTimeout(() => {
+            displayReview();
+            reviewContainer.style.opacity = 1;
+        }, 500); // Fade out duration (adjust as needed)
+    }, 5000); // Review display duration (adjust as needed)
+}
