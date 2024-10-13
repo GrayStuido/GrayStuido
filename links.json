@@ -1,0 +1,16 @@
+{
+  "links": [
+    {
+      "url": "https://example.com/article1",
+      "creator": "Alice Johnson"
+    },
+    {
+      "url": "https://example.com/article2",
+      "creator": "Bob Smith"
+    },
+    {
+      "url": "https://example.com/article3",
+      "creator": "Charlie Brown"
+    }
+  ]
+}
