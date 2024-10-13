@@ -1,16 +1,30 @@
 {
-  "links": [
+  "sections": [
     {
-      "url": "https://example.com/article1",
-      "creator": "Alice Johnson"
+      "title": "Technology",
+      "links": [
+        {
+          "url": "https://example.com/article1",
+          "creator": "Alice Johnson"
+        },
+        {
+          "url": "https://example.com/article2",
+          "creator": "Bob Smith"
+        }
+      ]
     },
     {
-      "url": "https://example.com/article2",
-      "creator": "Bob Smith"
-    },
-    {
-      "url": "https://example.com/article3",
-      "creator": "Charlie Brown"
+      "title": "Lifestyle",
+      "links": [
+        {
+          "url": "https://example.com/article3",
+          "creator": "Charlie Brown"
+        },
+        {
+          "url": "https://example.com/article4",
+          "creator": "Diana Prince"
+        }
+      ]
     }
   ]
 }
