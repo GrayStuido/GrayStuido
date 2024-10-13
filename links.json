@@ -1,28 +1,28 @@
 {
   "sections": [
     {
-      "title": "Technology",
+      "title": "Fracture",
       "links": [
         {
-          "url": "https://example.com/article1",
-          "creator": "Alice Johnson"
+          "url": "https://graystuido.github.io/Fracture/",
+          "creator": "Offical Link"
         },
         {
-          "url": "https://example.com/article2",
-          "creator": "Bob Smith"
+          "url": "https://example.com",
+          "creator": "Someone elses"
         }
       ]
     },
     {
-      "title": "Lifestyle",
+      "title": "ExtremeMath",
       "links": [
         {
-          "url": "https://example.com/article3",
-          "creator": "Charlie Brown"
+          "url": "https://lavishlylearning.com/",
+          "creator": "Offical Link"
         },
         {
-          "url": "https://example.com/article4",
-          "creator": "Diana Prince"
+          "url": "https://largestudyguide.com/",
+          "creator": "Offical Link"
         }
       ]
     }
